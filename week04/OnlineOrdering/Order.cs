@@ -27,7 +27,6 @@ public class Order
             total += p.GetTotalCost();
         }
 
-        // Shipping cost (one-time)
         total += _customer.LivesInUSA() ? 5 : 35;
 
         return total;
